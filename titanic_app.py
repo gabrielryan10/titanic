@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
+
+
+get_ipython().system('pip install xgboost')
+
+
+# In[ ]:
 
 
 import streamlit as st
