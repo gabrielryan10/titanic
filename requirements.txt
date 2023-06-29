@@ -1,2 +1,2 @@
-xgboost
+xgboost==1.6.2
 scikit-learn
