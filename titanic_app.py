@@ -68,7 +68,7 @@ def titanic_pred(model_titanic,pclass,title_num,sibsp_num,parch_num):
 def main():
     st.title("Titanic Survival Score Prediction")
 
-    pclass = st.selectbox("Class of Passenpger", [1, 2, 3])
+    pclass = st.selectbox("Class of Passenger", [1, 2, 3])
     title = st.selectbox("Name Title of Passenger", ["Mr", "Miss", "Mrs","Master"])
     sibsp = st.selectbox("Passenger has at least one spouse/sibling", ["No","Yes"])
     parch = st.selectbox("Passenger has at least one child/parent", ["No","Yes"])
