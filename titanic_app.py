@@ -67,7 +67,7 @@ def titanic_pred(model_titanic,pclass,title_num,sibsp_num,parch_num):
 
 def main():
     st.title("Titanic Survival Score Prediction")
-    st.subheader("(XGBoost Engine)")
+    st.write("(XGBoost Engine)")
 
 
     pclass = st.selectbox("Class of Passenger", [1, 2, 3])
