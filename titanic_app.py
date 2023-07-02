@@ -76,10 +76,15 @@ def main():
     parch = st.selectbox("Passenger has at least one child/parent", ["No","Yes"])
 
     x1,x2,x3,x4=titanic_pipe(pclass,title,sibsp,parch)
-    score=titanic_pred(load_model,x1,x2,x3,x4)[0]
+    pred=titanic_pred(load_model,x1,x2,x3,x4)
+    score=pred[0]
+    prob=pred[1]
 
     st.write('<p style="font-size:30px; color:red;">***Result:***</p>',unsafe_allow_html=True)
-    st.write(f'<p style="font-size:30px; color:red;">Survival Score is *{score}*</p>',unsafe_allow_html=True)
+    st.write(f'<p style="font-size:24px; color:red;">Survival Score is *{score}*</p>',unsafe_allow_html=True)
+    st.write(f'<p style="font-size:24px; color:blue;">Survival Probability is *{round(prob[0],4)}*</p>',unsafe_allow_html=True)
+    st.write('<p style="font-size:30px; color:red;">*************</p>',unsafe_allow_html=True)
+ 
     st.write('<p style="font-size:16px; color:black;">Score 1: highest chance of survival</p>',unsafe_allow_html=True)
     st.write('<p style="font-size:16px; color:black;">Score 2: high chance of survival</p>',unsafe_allow_html=True)
     st.write('<p style="font-size:16px; color:black;">Score 3: medium chance of survival</p>',unsafe_allow_html=True)
