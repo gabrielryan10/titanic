@@ -82,7 +82,7 @@ def main():
 
     st.write('<p style="font-size:30px; color:red;">***Result:***</p>',unsafe_allow_html=True)
     st.write(f'<p style="font-size:24px; color:red;">Survival Score is *{score}*</p>',unsafe_allow_html=True)
-    st.write(f'<p style="font-size:24px; color:blue;">Survival Probability is *{prob}*</p>',unsafe_allow_html=True)
+    st.write(f'<p style="font-size:24px; color:blue;">Survival Probability is *{prob[0]}*</p>',unsafe_allow_html=True)
     st.write('<p style="font-size:30px; color:red;">*************</p>',unsafe_allow_html=True)
  
     st.write('<p style="font-size:16px; color:black;">Score 1: highest chance of survival</p>',unsafe_allow_html=True)
